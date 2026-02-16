@@ -2,7 +2,7 @@
 
 import { useState, useRef, useCallback } from "react";
 
-const WEBHOOK_URL = "https://kev96n8n.duckdns.org/webhook-test/analyze-binary";
+const WEBHOOK_URL = "https://kev96n8n.duckdns.org/webhook-test/split-pdf";
 
 export default function Home() {
     const [files, setFiles] = useState([]);
