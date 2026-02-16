@@ -72,12 +72,12 @@ export default function Home() {
             fetch(WEBHOOK_URL, {
                 method: "POST",
                 body: formData,
-            }).catch(() => {});
+            }).catch(() => { });
 
             newResults.push({
                 fileName: file.name,
                 success: true,
-                content: "\u2705 Archivo cargado exitosamente. Tu documento est\u00e1 siendo analizado por la IA.",
+                content: "✅ Archivo cargado exitosamente. Tu documento está siendo analizado por la IA.",
             });
         }
 
@@ -117,7 +117,7 @@ export default function Home() {
                     </h1>
                 </div>
                 <p style={{ color: "var(--text-secondary)", fontSize: 16, lineHeight: 1.6 }}>
-                    Sube tus archivos PDF y obt&eacute;n un an&aacute;lisis inteligente impulsado por IA
+                    Sube tus archivos PDF y obtén un análisis inteligente impulsado por IA
                 </p>
             </div>
 
@@ -155,7 +155,7 @@ export default function Home() {
                         <path d="M24 16v16M16 24l8-8 8 8" stroke="#f97316" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                     <p style={{ fontSize: 16, fontWeight: 600, color: "var(--text-primary)", marginBottom: 6 }}>
-                        Arrastra tus PDFs aqu&iacute;
+                        Arrastra tus PDFs aquí
                     </p>
                     <p style={{ fontSize: 13, color: "var(--text-secondary)" }}>
                         o haz clic para seleccionar archivos
@@ -213,7 +213,7 @@ export default function Home() {
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                                 <path d="M3 10l7-7 7 7M10 3v14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
-                            Enviar para An&aacute;lisis
+                            Enviar para Análisis
                         </>
                     )}
                 </button>
